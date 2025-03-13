@@ -1,3 +1,5 @@
+/* Google Fonts CSS can be used here, or you can define custom colors and sizes */
+
 .greenItems{
     color: green;
     font-size: 2em;
@@ -80,32 +82,9 @@ p.first {
   body {
     padding:20px;
     font-family:Arial,sans-serif;
+    
   }
-  p {
-    position: relative;
-    width:240px;
-    background-color:#44abe2;
-    border:2px solid #004989;
-    text-align:center;
-  }
-  
-  h3 { padding:20px 0 10px;}
-  h3:first-child { padding:0px 0 10px; }
-  
-  div.margins {
-    width:242px;
-    background-image:url(/.guides/img/margin-swatch.png);
-  }
-  h1 {
-    position:relative;
-    background-color:#1d76c4;
-    width:140px;
-    font-size:150%;
-    padding:2px 20px;
-    margin-left:20px;
-    border-radius:4px 4px 0 0;
-    z-index:10;
-  }
+
   
   p22 {
     position:relative;
@@ -117,4 +96,6 @@ p.first {
     z-index:1;
     border:1px solid #1d76c4;
   }
+
+
 

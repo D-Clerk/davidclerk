@@ -1,0 +1,283 @@
+/* Ensure the body and html fill the entire viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+.name {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    text-align: center;
+}
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: white;
+    width: 100vw;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* General Section Layout */
+section {
+    padding: 40px 20px;
+    margin: 10px 0;
+}
+p {
+    position: relative;
+    width:90vw;
+    /* background-color:#44abe2;
+    border:2px solid #004989; */
+    font-size:150%;
+    text-align: center;
+  }
+  
+  h3 { 
+    text-align: Left;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    padding: 0;
+    width: 100%;
+    display: block;
+  }
+  /*h3:first-child { padding:0px 0 10px; }*/
+  
+  div.margins {
+    width:242px;
+    background-image:url(/.guides/img/margin-swatch.png);
+  }
+  h1 {
+    position:relative;
+    /* background-color:#5f6368; */
+    width: 100%;
+    font-size:150%;
+    padding:px 0px;
+    margin-left:0px;
+    text-align: center;
+    border-radius:4px 4px 0 0;
+    z-index:10;
+  }
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    display: block;
+}
+
+/* About Me Section */
+#about {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #e3e3e3;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+.skills-column {
+    flex: 1 1 200px; /* Each column will take up equal space, but no smaller than 200px */
+}
+.skills-container {
+    display: grid;
+    flex-wrap: wrap; /* Allow items to wrap to new lines if necessary */
+    justify-content: center; /* Center columns horizontally */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create responsive columns */
+    gap: 20px; /* Space between columns */
+    align-items: center; /* Center columns vertically (if needed) */
+    margin: 0 auto; /* Center the container in the middle of the page */
+    max-width: 1200px; /* Optional: Set a max width to prevent columns from being too wide */
+}
+.skills-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-column li {
+    margin-bottom: 10px;
+}
+/* Projects Section */
+#projects {
+    background-color: #f9f9f9;
+    display: block;
+    width: 100%;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e3e3e3;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+
+/* Styling for Project Cards */
+.project-card {
+    width: 100vw; /* Define the width of the card */
+    height: 350px; /* Define the height of the card (optional) */
+    padding: 20px; /* Add padding inside the card */
+    background-color: #f4f4f4; /* Background color */
+    border: 1px solid #ddd; /* Border for the card */
+    box-sizing: border-box; /* Includes padding and border in width/height */
+    overflow: hidden; /* Hides any content that exceeds the boundaries */
+    word-wrap: break-word; /* Break long words to avoid overflow */
+    display: block;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Styling for the Circle Container */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Container height */
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    width: 120px; /* Circle size */
+    height: 120px;
+    border-radius: 50%;
+    display: flex; /* Enables flexbox on the circle */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    color: white; /* Text color */
+    font-size: 12px; /* Text size */
+    font-weight: bold; /* Make text bold */
+    transition: all 0.3s ease;
+}
+/* Specific circle sizes and colors (adjusted as per previous example) */
+.circle1 { background-color: #ff4747; }
+.circle2 { background-color: #4682b4; }
+.circle3 { background-color: #32cd32; }
+.circle4 { background-color: #ff4500; }
+.circle5 { background-color: #ffa500; }
+.circle6 { background-color: #9370db; }
+
+.circle-container .circle1 { transform: rotate(0deg) translate(260px) rotate(0deg); }
+.circle-container .circle2 { transform: rotate(60deg) translate(260px) rotate(-60deg); }
+.circle-container .circle3 { transform: rotate(120deg) translate(260px) rotate(-120deg); }
+.circle-container .circle4 { transform: rotate(180deg) translate(260px) rotate(-180deg); }
+.circle-container .circle5 { transform: rotate(240deg) translate(260px) rotate(-240deg); }
+.circle-container .circle6 { transform: rotate(300deg) translate(260px) rotate(-300deg); }
+
+.round-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Container height */
+    position: relative;
+}
+.round-btn {
+    position: absolute;
+    width: 120px; /* Circle size */
+    height: 120px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex; /* Enables flexbox on the circle */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    color: white; /* Text color */
+    font-size: 12px; /* Text size */
+    font-weight: bold; /* Make text bold */
+    transition: all 0.3s ease;
+  }
+  
+  .round-btn1 { background-color: #f01f1f; }
+  .round-btn2 { background-color: #4682b4; }
+  .round-btn3 { background-color: #32cd32; }
+  .round-btn4 { background-color: #0c0c0b; }
+  .round-btn5 { background-color: #ffa500; }
+  .round-btn6 { background-color: #747371e3; }
+  
+.round-btn-container .round-btn1 { transform: rotate(0deg) translate(260px) rotate(0deg); }
+.round-btn-container .round-btn2 { transform: rotate(60deg) translate(260px) rotate(-60deg); }
+.round-btn-container .round-btn3 { transform: rotate(120deg) translate(260px) rotate(-120deg); }
+.round-btn-container .round-btn4 { transform: rotate(180deg) translate(260px) rotate(-180deg); }
+.round-btn-container .round-btn5 { transform: rotate(240deg) translate(260px) rotate(-240deg); }
+.round-btn-container .round-btn6 { transform: rotate(300deg) translate(260px) rotate(-300deg); }
+
+
+/* Styling for the text in the center of the open space between circles */
+.center-text {
+    position: absolute;
+    font-size: 24px; /* Size of the text */
+    font-weight: bold;
+    color: #333; /* Text color */
+    text-align: center;
+}
+
+/* Form and Contact Styles */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Scroll Styling for Smooth Transitions */
+html {
+    scroll-behavior: smooth;
+}
