@@ -1,4 +1,4 @@
-name: Copy HTML Folder from main to sharedFiles
+name: Copy HTML Folder from master to SharedFiles
 
 on:
   push:
@@ -16,12 +16,30 @@ jobs:
         with:
           ref: master
 
-      # Copy the HTML folder to the SharedFiles branch
+      # Set up Git configuration for commit
+      - name: Set up Git
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+
+      # Ensure SharedFiles branch exists, or create it if it doesn't
+      - name: Create and checkout SharedFiles branch if it doesn't exist
+        run: |
+          # Fetch all branches
+          git fetch origin
+
+          # Check if the SharedFiles branch exists
+          if git show-ref --verify --quiet refs/heads/SharedFiles; then
+            git checkout SharedFiles  # If the branch exists, checkout the branch
+          else
+            # If the branch doesn't exist, create it from the master branch
+            git checkout -b SharedFiles
+            git push origin SharedFiles  # Push the new branch to remote
+          fi
+
+      # Copy the HTML folder to SharedFiles branch
       - name: Copy HTML folder to SharedFiles branch
         run: |
-          # Checkout the sharedFiles branch
-          git checkout SharedFiles
-
           # Copy the HTML folder to the SharedFiles branch
           cp -r HTML/ HTML/
 
@@ -31,9 +49,5 @@ jobs:
           # Commit the changes
           git commit -m "Copy HTML folder from master to SharedFiles"
 
-          # Push the changes to the sharedFiles branch
+          # Push the changes to the SharedFiles branch
           git push origin SharedFiles
-
-      # Optionally, push changes to the repository (after copying the folder)
-      - name: Push changes to SharedFiles branch
-        run: git push origin SharedFiles
