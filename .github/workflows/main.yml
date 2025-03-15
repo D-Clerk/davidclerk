@@ -49,5 +49,7 @@ jobs:
           # Commit the changes
           git commit -m "Copy HTML folder from master to SharedFiles"
 
-          # Push the changes to the SharedFiles branch
-          git push origin SharedFiles
+          # Push the changes to the SharedFiles branch using the personal access token
+          git push https://github.com/D-Clerk/davidclerk.git SharedFiles --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Use the token from secrets
