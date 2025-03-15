@@ -1,0 +1,39 @@
+name: Copy HTML Folder from main to sharedFiles
+
+on:
+  push:
+    branches:
+      - master  # Trigger the workflow when there is a commit to the 'master' branch
+
+jobs:
+  copy-folder:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the master branch (where the HTML folder exists)
+      - name: Checkout master branch
+        uses: actions/checkout@v3
+        with:
+          ref: master
+
+      # Copy the HTML folder to the SharedFiles branch
+      - name: Copy HTML folder to SharedFiles branch
+        run: |
+          # Checkout the sharedFiles branch
+          git checkout SharedFiles
+
+          # Copy the HTML folder to the SharedFiles branch
+          cp -r HTML/ HTML/
+
+          # Add the changes to git
+          git add HTML/
+
+          # Commit the changes
+          git commit -m "Copy HTML folder from master to SharedFiles"
+
+          # Push the changes to the sharedFiles branch
+          git push origin SharedFiles
+
+      # Optionally, push changes to the repository (after copying the folder)
+      - name: Push changes to SharedFiles branch
+        run: git push origin SharedFiles
