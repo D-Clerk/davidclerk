@@ -6,9 +6,16 @@ html, body {
     display: flex;
     flex-direction: column; /* Stack content vertically */
 }
-.name {
-    font-size: 2.5em;
+.nameh1 {
+    font-size: 35px;
     margin-bottom: 5px;
+    margin-left:40px;
+    text-align: center;
+}
+.namep1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-left: 58px;
     text-align: center;
 }
 /* Navigation Bar */
@@ -38,9 +45,16 @@ nav ul li a {
 }
 
 /* General Section Layout */
-section {
+.general-section {
     padding: 40px 20px;
     margin: 10px 0;
+
+display: flex; /* Use flexbox to center the content */
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+padding: 40px 20px;
+margin: 20px 0;
+height: 100vh; /* Take up full viewport height */
 }
 p {
     position: relative;
@@ -85,6 +99,56 @@ h2 {
     padding: 0;
     width: 100%;
     display: block;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+}
+.mern-container, .video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 20px;
+}
+.mern-container {
+    margin-bottom: 20px; /* Adjust spacing between the two containers */
+    align-items: center;
+    }
+/* Styling for Section 1 */
+.main-container-content {
+    flex: 1;
+    padding-right: 10px;
+    margin-left: 0px;
+}
+
+
+.video-container h3, .video-container p {
+    position: absolute;
+    color: black;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 50px;
+}
+
+.video-container {
+    top: -200%;
+    position: relative;
+    max-width: 1000px; /* Max width for video container */
+    left: 800px; /* Move the video container to the right by 400px */
+    align-items: center;
+    margin-left: 100px;
+}
+video {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
 }
 
 /* About Me Section */
@@ -212,6 +276,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     height: 400px; /* Container height */
     position: relative;
 }
@@ -229,6 +294,9 @@ footer {
     font-size: 12px; /* Text size */
     font-weight: bold; /* Make text bold */
     transition: all 0.3s ease;
+    
+    background-color: #4CAF50;
+    text-align: center;
   }
   
   .round-btn1 { background-color: #f01f1f; }
@@ -249,10 +317,14 @@ footer {
 /* Styling for the text in the center of the open space between circles */
 .center-text {
     position: absolute;
-    font-size: 24px; /* Size of the text */
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    font-size: 22px;
     font-weight: bold;
-    color: #333; /* Text color */
+    color: black;
     text-align: center;
+    z-index: 10; /* Ensure the text appears on top of the video */
 }
 
 /* Form and Contact Styles */
