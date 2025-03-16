@@ -9,13 +9,13 @@ html, body {
 .nameh1 {
     font-size: 35px;
     margin-bottom: 5px;
-    margin-left:40px;
+    margin-left: 0px;
     text-align: center;
 }
 .namep1 {
     font-size: 30px;
     margin-bottom: 5px;
-    margin-left: 58px;
+    margin-left: 0px;
     text-align: center;
 }
 /* Navigation Bar */
@@ -58,11 +58,13 @@ height: 100vh; /* Take up full viewport height */
 }
 p {
     position: relative;
-    width:90vw;
+    width:100%;
     /* background-color:#44abe2;
     border:2px solid #004989; */
-    font-size:150%;
-    text-align: center;
+    font-size:100%;
+    text-align: left;
+    word-wrap: break-word; /* Breaks long words */
+    overflow-wrap: break-word; /* Ensures words break and wrap within the container */
   }
   
   h3 { 
@@ -77,7 +79,7 @@ p {
   /*h3:first-child { padding:0px 0 10px; }*/
   
   div.margins {
-    width:242px;
+    width: 20px;
     background-image:url(/.guides/img/margin-swatch.png);
   }
   h1 {
@@ -107,6 +109,7 @@ h2 {
     justify-content: space-between;
     margin-top: 20px;
     padding: 20px;
+    width: 100%;
 }
 .mern-container, .video-container {
     display: flex;
@@ -153,7 +156,7 @@ video {
 
 /* About Me Section */
 #about {
-    background-color: #f4f4f4;
+    background-color: #e3e3e3;
     text-align: center;
 }
 
@@ -209,7 +212,7 @@ footer {
 
 /* Styling for Project Cards */
 .project-card {
-    width: 100vw; /* Define the width of the card */
+    width: 30vw; /* Define the width of the card */
     height: 350px; /* Define the height of the card (optional) */
     padding: 20px; /* Add padding inside the card */
     background-color: #f4f4f4; /* Background color */
@@ -218,8 +221,18 @@ footer {
     overflow: hidden; /* Hides any content that exceeds the boundaries */
     word-wrap: break-word; /* Break long words to avoid overflow */
     display: block;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
+td {
+    padding: 10px;
+    width: 33%; /* Distribute the width evenly among the columns */
+    vertical-align: top;
+}
 .project-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -233,6 +246,20 @@ footer {
 .project-card a {
     color: #007bff;
     text-decoration: none;
+}
+.view-project-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    text-decoration: none; /* Remove underline */
+}
+
+.view-project-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
 
 /* Styling for the Circle Container */
@@ -329,24 +356,62 @@ footer {
 
 /* Form and Contact Styles */
 input[type="text"], input[type="email"], textarea {
-    width: 100%;
+    width: 20%;
     padding: 10px;
-    margin: 10px 0;
+    margin-left: 5px;
+    margin-right: 100px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+textarea {
+    width: 80%; /* Makes it take up 100% of its parent container's width */
+    max-width: 700px; /* Prevents it from growing beyond 500px */
+    padding: 10px; /* Adds space inside the text area */
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+    resize: vertical; /* Allows resizing the textarea vertically (optional) */
+    
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    margin-right: 5px; /* 5px gap between label and input */
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 8px;
+    width: 200px; /* Set a specific width for input fields */
+    box-sizing: border-box;
+}
+
+/* Style for buttons and text fields */
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
 
 .submit-button {
-    background-color: #007bff;
-    color: white;
     padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
 }
 
 .submit-button:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
 }
 
 /* Scroll Styling for Smooth Transitions */
