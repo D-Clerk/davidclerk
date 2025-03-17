@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles.css"> <!-- Link your external CSS file here -->
+    <link rel="stylesheet" href="portfolio1.css">
+
+    <!-- Todo: Update the title with your name -->
+    <title>David Clerk - Portfolio</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">Bio</a></li>
+            <li><a href="https://d-clerk.github.io/davidclerk/">GitHub Page</a></li>
+        </ul>
+    </nav>
+
+<!-- Section 1: Header -->
+<section class="main-container">
+ <header>
+      
+    <h1 class="nameh1">David Clerk</h1>
+    <p class="namep1">Digital Portfolio Video</p>
+ </header>
+</section>
+<div><p style="color: #ca2929; font-weight: lighter; text-align: center;">
+    <em>Click a Button To View Repositories</em>
+  </p></div>
+<!-- Section 2: MERN -->
+<section class="general-section">
+  
+    <div class="mern-container">
+        
+        <div class="round-btn-container">
+            <div class="round-btn round-btn1">Node JS</div>
+            <div class="round-btn round-btn2">CSS</div>
+            <div id="round-btn3" class="round-btn round-btn3">HTML</div>
+            <div class="round-btn round-btn4">Mongo Db</div>
+            <div class="round-btn round-btn5">Express</div>
+            <div class="round-btn round-btn6">React</div>
+            <div>
+            <div class="center-text">Introductory Video</div>
+            <div><br>
+            <video width="360" height="360" autoplay controls>
+                    <source src="./Videos/file_example_MP4_640_3MG.mp4" type="video/mp4">
+                    <source src="./Videos/file_example_MP4_640_3MG.mp4" type="video/webm">
+                    <source src="./Videos/file_example_MP4_640_3MG.mp4" type="video/ogg">Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+</br></br>
+<section id="skills">
+
+    <h2>Core Competencies</h2>
+    <br />
+    <table style="width: 100%; table-layout: fixed;">
+        <thead>
+            <tr>
+                <th style="text-align: center; width: 16%;">Azure Cloud Identity and Access Management (IAM) Platform</th>
+                <th style="text-align: center; width: 16%;">Database Management and Development Tools</th>
+                <th style="text-align: center; width: 16%;">Visual Diagramming and Planning Tools</th>
+                <th style="text-align: center; width: 16%;">Power Platform and Business Analytics Tools</th>
+                <th style="text-align: center; width: 16%;">Desktop Applications and Productivity Tools</th>
+                <th style="text-align: center; width: 16%;">Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), and Business Management Tools</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="skills-column">
+                        <ul>
+                            <li>Azure Entra</li>
+                            <li>Azure Data Studio</li>
+                            <li>Azure Storage</li>
+                            <li>Azure App Services</li>
+                            <li>MS365 Admin Center</li>
+                            <li>SharePoint Admin</li>
+                           
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="skills-column">
+                        <ul>
+                            <li>SQL SSMS</li>
+                            <li>SQL SSIS</li>
+                            <li>SQL SSRS</li>
+                            <li>MS Access</li>
+                            
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="skills-column">
+                        <ul>
+                            <li>Confluence</li>
+                            <li>MS Project</li>
+                            <li>MS Planner</li>
+                            <li>MS Visio</li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="skills-column">
+                        <ul>
+                            <li></li>
+                            <li>Power Platform Admin Center</li>
+                            <li>Power Automate</li>
+                            <li>Power Apps</li>
+                            <li>Power Bi</li>
+                            <li>Power Pages</li>
+                            <li>Domo</li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="skills-column">
+                        <ul>
+                            <li>MS Word</li>
+                            <li>MS PowerPoint</li>
+                            <li>MS Excel</li>
+                            <li>MS Access</li>
+                            <li>MS Visio</li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="skills-column">
+                        <ul>
+                            <li>Business Central</li>
+                            <li>MicroSoft Dynamics 365</li>
+                            <li>Zoho</li>
+                            <li>Domo</li>
+                            
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<br><br>
+    <!-- Section 3: Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- Project Table -->
+        <table style="width: 100%; table-layout: auto;">
+            <tr>
+                <!-- First Project Card -->
+                <td>
+                    <div class="project-card">
+                        <h3><center>Requirements & Planning Docs</center></h3>
+                        <p>This project showcases the business planning and implementation process to deliver a fully functional business solution for a real world event in the food packaging industry.</p>
+                        <a href="#" target="_blank">View Project</a>
+                    </div>
+                </td>
+
+                <!-- Second Project Card -->
+                <td>
+                    <div class="project-card">
+                        <h3><center>Data Science CapStone</center></h3>
+                        <p>This project showcases data modeling, predictions, and analytics through the use of SQL, DAX, PowerBI, Power Query, Azure Data Factory, M-Language, and Enterprise Business Process Automation.</p>
+                        <a href="#" target="_blank">View Project</a>
+                    </div>
+                </td>
+
+                <!-- Third Project Card -->
+                <td>
+                    <div class="project-card">
+                        <h3><center>MERN</center></h3>
+                        <p>MERN Capstone - showcasing skills in web and cloud application development via MongoDB, Express, Angular, Node via React.js as the front-end framework.</p>
+                        <a href="#" target="_blank">View Project</a>
+                    </div>
+                </td>
+            </tr>
+        
+        </table>
+    </section>
+</br>
+<!-- Section 3: Skills -->
+
+
+</br>
+<!-- Section 5: About Me -->
+   <section id="about">
+       
+
+    <h2>Bio</h2>
+    <p> As a versatile, culturally sensitive leader, I take a proactive approach to
+      driving strategic business success. I specialize in designing and developing 
+      multi-tiered applications and visualizations that help implement strategies 
+      focused on mitigating risk, improving customer satisfaction, enhancing quality,
+      reducing costs, increasing maintenance productivity, and optimizing processes. </p>
+      
+      <br>
+      <table style="width: 100%; table-layout: fixed;">
+        <thead>
+            <tr>
+                <th style="text-align: center; width: 16%;">
+                <a href="https://www.linkedin.com/in/david-clerk-jp">Read My Bio On LinkedIn</a></th>
+                
+                                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p><center>Or</center></p>
+    <br>
+    <table style="width: 100%; table-layout: fixed;">
+        <thead>
+            <tr>
+                <th style="text-align: center; width:100%;">Contact Me Directly - david.clerk.jp@gmail.com</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <form action="#" method="post">
+                <tr>
+                    <td style="width: 100%; margin-right: 5px;">
+                            <label for="name" style="margin-left: 80px; margin-right: 5px;">Name:</label>
+                            <input type="text" id="name" name="name" class="input-field" required>
+                
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" class="input-field" required>
+            
+                        </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center; vertical-align: middle;">
+                        <label for="message" style="display: block;">Message:</label>
+                        <textarea id="message" name="message" class="input-field" rows="4" required style="display: block; margin: 0 auto;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    
+                    <button type="submit" class="submit-button">Send Message</button>
+                    
+                    </td>
+                </tr>
+        </form>
+        </tbody>
+    </table>
+ </section>
+</br>
+
+
+
+    <!-- Section 6: Footer -->
+    <footer>
+       
+    <p>&copy; 2024 DavidClerk. All rights reserved.</p>
+
+    </footer>
+
+    <script>
+            // Button click to open the GitHub folder link in the same window
+    const btn = document.getElementById("round-btn3");
+    if (btn) {
+        btn.addEventListener("click", function() {
+            console.log("Button clicked! Navigating...");
+            window.location.href = "https://github.com/D-Clerk/MERN/tree/main/SharedFiles/HtmlBasics";
+        });
+    } else {
+        console.log("Button not found!");
+    }
+    </script>
+    
+</body>
+</html>
