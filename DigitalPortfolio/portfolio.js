@@ -17,11 +17,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-/*
-    // JavaScript to open the GitHub folder link when the button is clicked
-    document.getElementById("round-btn3").addEventListener("click", function() {
-        window.open("https://github.com/D-Clerk/MERN/tree/main/SharedFiles/HtmlBasics");
-    });
-});
-*/
+
 
