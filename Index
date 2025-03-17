@@ -38,12 +38,12 @@
     <div class="mern-container">
         
         <div class="round-btn-container">
-            <div id="round-btn1" class="round-btn round-btn1" data-link = "https://github.com/users/D-Clerk/projects/6">AL Coding</div>
-            <div id="round-btn2" class="round-btn round-btn2" data-link = "https://github.com/D-Clerk/MERN/tree/main/SharedFiles/HtmlBasics">BootStrap</div>
-            <div id="round-btn3" class="round-btn round-btn3" data-link = "https://github.com/D-Clerk/MERN/tree/main/SharedFiles/HtmlBasics">HTML Pages</div>
-            <div id="round-btn4" class="round-btn round-btn4" data-link = "https://github.com/users/D-Clerk/projects/7">Business Docs</div>
-            <div id="round-btn5" class="round-btn round-btn5" data-link = "https://github.com/D-Clerk/MERN/tree/main/SharedFiles/HtmlBasics">MSSQL Scripts</div>
-            <div id="round-btn6" class="round-btn round-btn6" data-link = "https://github.com/D-Clerk/MERN/tree/main/SharedFiles/HtmlBasics">MERN</div>
+            <div class="round-btn round-btn1">Node JS</div>
+            <div class="round-btn round-btn2">CSS</div>
+            <div id="round-btn3" class="round-btn round-btn3">HTML</div>
+            <div class="round-btn round-btn4">Mongo Db</div>
+            <div class="round-btn round-btn5">Express</div>
+            <div class="round-btn round-btn6">React</div>
             <div>
             <div class="center-text">Introductory Video</div>
             <div><br>
@@ -265,12 +265,11 @@
     <p>&copy; 2024 DavidClerk. All rights reserved.</p>
 
     </footer>
-/*
+
     <script>
-   // Button click to open the GitHub folder link in the same window
-   /* This was for one identified button
-    const btn = document.getElementById("round-btn1");
-    if (btn ===) {
+            // Button click to open the GitHub folder link in the same window
+    const btn = document.getElementById("round-btn3");
+    if (btn) {
         btn.addEventListener("click", function() {
             console.log("Button clicked! Navigating...");
             window.location.href = "https://github.com/D-Clerk/MERN/tree/main/SharedFiles/HtmlBasics";
@@ -278,19 +277,7 @@
     } else {
         console.log("Button not found!");
     }
-   */     
-    const buttons = document.querySelectorAll(".round-btn");  // Select all buttons with the class 'round-btn'
-
-buttons.forEach(btn => {
-    btn.addEventListener("click", function() {
-        const link = this.getAttribute("data-link");  // Get the link from the data attribute
-        console.log("Button clicked: ", this);
-        console.log("Navigating to:", link);
-        window.location.href = link;  // Navigate to the link stored in the data attribute
-    });
-});
-
     </script>
-*/  
+    
 </body>
 </html>
