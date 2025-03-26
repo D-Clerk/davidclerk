@@ -10,7 +10,7 @@ html, body {
     font-size: 35px;
     margin-bottom: 5px;
     margin-left: 0px;
-    text-align: center;
+    text-align: left;
 }
 .namep1 {
     font-size: 30px;
@@ -68,8 +68,8 @@ p {
   }
   
   h3 { 
-    text-align: Left;
-    font-size: 2rem;
+    text-align: center;
+    font-size: 30px;
     margin-bottom: 0px;
     margin-right: 0px;
     padding: 0;
@@ -213,6 +213,18 @@ footer {
 /* Styling for Project Cards */
 .project-card {
     width: 30vw; /* Define the width of the card */
+    height: 250px; /* Define the height of the card (optional) */
+    padding: 20px; /* Add padding inside the card */
+    background-color: #f4f4f4; /* Background color */
+    border: 1px solid #ddd; /* Border for the card */
+    box-sizing: border-box; /* Includes padding and border in width/height */
+    overflow: hidden; /* Hides any content that exceeds the boundaries */
+    word-wrap: break-word; /* Break long words to avoid overflow */
+    display: block;
+    text-align: center;
+}
+.ee-card {
+    width: 50vw; /* Define the width of the card */
     height: 350px; /* Define the height of the card (optional) */
     padding: 20px; /* Add padding inside the card */
     background-color: #f4f4f4; /* Background color */
